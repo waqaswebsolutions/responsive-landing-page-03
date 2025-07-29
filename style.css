@@ -1,0 +1,116 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+   height: 100%;
+    width: 100%;
+    font-family: system-ui, sans-serif;
+    background-color: #fff;
+    color: #000;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    /* background-color: rgb(37, 99, 153); */
+}
+
+.main-top {
+    height: 35%;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    /* background-color: yellow; */
+}
+
+.main-bottom {
+    height: 65%;
+    width: 100%;
+    background-color: rgb(135, 164, 189);
+    background-image: url(/Images/sean-pollock-PhYq704ffdA-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.top-left {
+    width: 55%;
+    height: 100%;
+    /* background-color: rgb(38, 83, 123); */
+    padding: 2vh 2vw;
+    /* background-color: aqua; */
+
+}
+
+.top-left h1 {
+    font-size: 6vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.top-right {
+    width: 45%;
+    height: 100%;
+    /* background-color: rgb(56, 230, 218); */
+    padding: 7vh 2vw;
+    /* background-color: rgb(72, 152, 152); */
+}
+
+.top-right p {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.576);
+}
+
+.top-right button {
+    font-size: 14px;
+    background-color: black;
+    color: rgba(255, 251, 251, 0.968);
+    margin-top: 2vh;
+    padding: 1vh 1.5vw;
+    border-radius: 0.8vw;
+    border: 0;
+    outline: 0;
+}
+
+@media (max-width:700px){
+    html,body{
+        min-height: 100vh;
+    }
+    .main{
+        min-height: 100vh;
+    }
+    .main-top{
+        flex-direction: column;
+        height: 60%;
+
+    }
+    .top-left{
+        /* background-color: antiquewhite; */
+        width: 100%;
+        padding: 2vh 2vw;
+    }
+    .top-left h1{
+        font-size: 10vw;
+    }
+    .top-right{
+        /* background-color: rgb(107, 75, 33); */
+        width: 100%;
+    }
+    .top-right button{
+        font-size: 20px;
+        border-radius: 10px;
+        padding: 10px 20px;
+    }
+    .main-bottom{
+        height: 40%;
+        width: 100%;
+    }
+}
